@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CALCULATOR</title>
+</head>
+<body>
+
+    <div>
+        <h2>CALCULATOR</h2>
+
+        <input type="number" id="firstNumber" placeholder="Enter First Number">
+
+        <select id="operator">
+            <option value="+">Addition</option>
+            <option value="-">Subtraction</option>
+            <option value="*">Multiplication</option>
+            <option value="/">Division</option>
+        </select>
+
+        <input type="number" id="secondNumber" placeholder="Enter Second Number">
+
+        <button onclick="calculate()">Calculate</button>
+
+        <h3 id="resultText"></h3>
+    </div>
+
+    <script>
+        function calculate() {
+            let a = parseFloat(document.getElementById("firstNumber").value);
+            let b = parseFloat(document.getElementById("secondNumber").value);
+            let op = document.getElementById("operator").value;
+            let resultText = document.getElementById("resultText");
+
+            if (isNaN(a) || isNaN(b)) {
+                return resultText.innerText = "Please enter both numbers";
+            }
+
+            if (op == "/" && b == 0) {
+                return resultText.innerText = "Cannot divide by zero";
+            }
+
+            let r = op == "+" ? a + b :
+                    op == "-" ? a - b :
+                    op == "*" ? a * b :
+                    a / b;
+
+            resultText.innerText = "Result: " + r;
+        }
+    </script>
+
+</body>
+</html>
