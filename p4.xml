@@ -1,1 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="4.styles.css"?>
 
+<STUDENTDATA>
+    <STUDENT>
+        <USN>USN :1BY24CS050</USN>
+        <NAME>NAME :C.JHANAVI</NAME>
+        <COLLEGE>COLLEGE :BMSIT</COLLEGE>
+        <BRANCH>BRANCH :CSE</BRANCH>
+        <YEAR>YEAR :2026</YEAR>
+        <EMAIL>EMAIL :jhanvi@gmail.com</EMAIL>
+    </STUDENT>
+
+    <STUDENT>
+        <USN>USN :1BY24CS126</USN>
+        <NAME>NAME :KEERTHI</NAME>
+        <COLLEGE>COLLEGE :BMSIT</COLLEGE>
+        <BRANCH>BRANCH :ECE</BRANCH>
+        <YEAR>YEAR :2026</YEAR>
+        <EMAIL>EMAIL :keerthi@gmail.com</EMAIL>
+    </STUDENT>
+    
+    <STUDENT>
+        <USN>USN :1BY24CS290</USN>
+        <NAME>NAME :MANOGNA</NAME>
+        <COLLEGE>COLLEGE :BMSIT</COLLEGE>
+        <BRANCH>BRANCH :AIML</BRANCH>
+        <YEAR>YEAR :2026</YEAR>
+        <EMAIL>EMAIL :manogna@gmail.com</EMAIL>
+    </STUDENT>
+</STUDENTDATA>
