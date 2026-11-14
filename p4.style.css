@@ -4,46 +4,46 @@
     margin-left: 15px;
 }
 
-USN
-{
-	color:blue;
-	font-size:30px;
-	
+USN {
+display: block;
+color: blue;
+font-size: 30px;
+margin-left: 0px;
 }
 
-NAME
-{
-	color:black;
-	font-size:25px;
-	
+NAME {
+display: block;
+color: red;
+font-size: 25px;
+margin-left: 50px;
 }
 
-COLLEGE
-{
-	color:red;
-	font-size:25px;
-
+COLLEGE {
+display: block;
+color: black;
+font-size: 25px;
+margin-left: 50px;
 }
 
-BRANCH
-{
-	color:green;
-	font-size:20px
-
+BRANCH {
+display: block;
+color: orangered;
+font-size: 25px;
+margin-left: 50px;
 }
 
-YEAR
-{
-	color:orange;
-	font-size:20px;
-	
+YEAR {
+display: block;
+color: deeppink;
+font-size: 25px;
+margin-left: 50px;
 }
 
-EMAIL
-{
-	color:blueviolet;
-	font-size:20px;
-	
+EMAIL {
+display: block;
+color: blueviolet;
+font-size: 25px;
+margin-left: 50px;
 }
 
 
