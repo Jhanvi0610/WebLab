@@ -5,85 +5,55 @@
     <style>
         body {
             margin: 0;
-            font-family: Georgia, serif;
-            background-color: #fff8f8;
-            color: #333;
-        }
-
-        header {
-            background-color: #f4a6b7;
-            padding: 20px 40px;
-            color: white;
+            background-color: #fff7f7;
+            font-family: "Times New Roman", serif;
         }
 
         h1 {
+            background-color: #ed7898;
+            color: white;
+            padding: 25px;
             margin: 0;
-            font-size: 30px;
-            letter-spacing: 2px;
+            font-size: 40px;
         }
 
-        .container {
-            text-align: center;
-            margin-top: 100px;
-        }
-
-        h2 {
-            font-size: 24px;
-            color: #444;
-        }
-
-        p {
-            color: #888;
-            font-size: 16px;
+        hr {
+            border: 1px solid #ed7898;
+            margin: 25px 20px;
         }
 
         a {
-            display: inline-block;
-            text-decoration: none;
-            color: #9b5267;
-            background-color: white;
-            padding: 12px 30px;
-            margin: 15px;
-            border: 1px solid #f4a6b7;
-            border-radius: 8px;
-            font-size: 18px;
+            display: block;
+            color: #963e59;
+            font-size: 25px;
+            margin: 25px 40px;
+            text-decoration: underline;
         }
 
         a:hover {
-            background-color: #f4a6b7;
-            color: white;
+            color: #ed7898;
         }
 
-        footer {
-            text-align: center;
-            margin-top: 150px;
-            color: #aaa;
-            font-size: 13px;
+        a::before {
+            content: "▶";
+            color: #ed7898;
+            font-size: 16px;
+            margin-right: 20px;
         }
     </style>
 </head>
 
 <body>
 
-    <header>
-        <h1>WEB LAB</h1>
-    </header>
+    <h1>WEB LAB</h1>
 
-    <div class="container">
+    <hr>
 
-        <h2>Welcome to Web Lab</h2>
+    <a href="p1.html">P1</a>
 
-        <p>Explore the practical programs</p>
+    <a href="p2.html">P2</a>
 
-        <a href="p1.html">P1</a>
-        <a href="p2.html">P2</a>
-        <a href="p4.xml">P4</a>
-
-    </div>
-
-    <footer>
-        Web Technology Laboratory
-    </footer>
+    <a href="p4.xml">P4</a>
 
 </body>
 </html>
