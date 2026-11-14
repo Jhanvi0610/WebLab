@@ -1,50 +1,51 @@
-* {
+STUDENTDATA {
     display: block;
-    font-size: 20px;
-    margin-left: 15px;
+    font-family: "Times New Roman";
+}
+
+STUDENT {
+    display: block;
+    margin-left: 40px;
+    margin-bottom: 40px;
 }
 
 USN {
-display: block;
-color: blue;
-font-size: 30px;
-margin-left: 0px;
+    display: block;
+    color: blue;
+    font-size: 30px;
 }
 
 NAME {
-display: block;
-color: red;
-font-size: 25px;
-margin-left: 50px;
+    display: block;
+    color: red;
+    font-size: 25px;
+    margin-left: 50px;
 }
 
 COLLEGE {
-display: block;
-color: black;
-font-size: 25px;
-margin-left: 50px;
+    display: block;
+    color: black;
+    font-size: 25px;
+    margin-left: 50px;
 }
 
 BRANCH {
-display: block;
-color: orangered;
-font-size: 25px;
-margin-left: 50px;
+    display: block;
+    color: orange;
+    font-size: 25px;
+    margin-left: 50px;
 }
 
 YEAR {
-display: block;
-color: deeppink;
-font-size: 25px;
-margin-left: 50px;
+    display: block;
+    color: deeppink;
+    font-size: 25px;
+    margin-left: 50px;
 }
 
 EMAIL {
-display: block;
-color: blueviolet;
-font-size: 25px;
-margin-left: 50px;
+    display: block;
+    color: blueviolet;
+    font-size: 25px;
+    margin-left: 50px;
 }
-
-
-
