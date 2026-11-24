@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: blue;
+            margin: 40px;
+        }
+
+        h2 {
+            text-align: center;
+            color: darkblue;
+        }
+
+        form {
+            background: white;
+            padding: 20px;
+            width: 350px;
+            margin: auto;
+            border-radius: 10px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input {
+            width: 95%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+        input[type="submit"] {
+            background: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        .error {
+            color: red;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>Registration Form</h2>
+
+<form onsubmit="return validateForm()">
+
+    <label>Name:</label>
+    <input type="text" id="fname">
+    <span class="error" id="nameError"></span>
+
+    <label>Password:</label>
+    <input type="password" id="password">
+    <span class="error" id="passError"></span>
+
+    <label>Email:</label>
+    <input type="email" id="email">
+    <span class="error" id="emailError"></span>
+
+    <label>Mobile:</label>
+    <input type="text" id="mobile">
+    <span class="error" id="mobileError"></span>
+
+    <input type="submit" value="Register">
+
+</form>
+
+<script>
+function validateForm() {
+    let name = document.getElementById("fname").value.trim();
+    let pass = document.getElementById("password").value;
+    let email = document.getElementById("email").value.trim();
+    let mobile = document.getElementById("mobile").value.trim();
+    let valid = true;
+
+    document.querySelectorAll(".error").forEach(e => e.innerHTML = "");
+
+    if (!/^[A-Za-z]{6,}$/.test(name)) {
+        nameError.innerHTML = "Name must have at least 6 letters.";
+        valid = false;
+    }
+
+    if (pass.length < 6) {
+        passError.innerHTML = "Password must be 6 characters long.";
+        valid = false;
+    }
+
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        emailError.innerHTML = "Enter a valid email.";
+        valid = false;
+    }
+
+    if (!/^\d{10}$/.test(mobile)) {
+        mobileError.innerHTML = "Enter a valid 10-digit mobile number.";
+        valid = false;
+    }
+
+    return valid;
+}
+</script>
+
+</body>
+</html>
